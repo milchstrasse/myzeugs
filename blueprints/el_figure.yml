@@ -1,0 +1,48 @@
+<?php if(!defined('KIRBY')) exit ?>
+
+title: Bild(er)
+icon: picture-o
+pages: false
+files: true
+  fields:
+    alt:
+      label: Alternativtext
+      type: text
+      help: wird angezeigt, wenn das Bild nicht geladen wird
+    caption:
+      label: Beschreibung
+      type: textarea
+    hide:
+      label: dieses Bild verbergen
+      type: toggle
+      text: yes/no
+      default: no   
+      
+fields:
+  info:
+    label: Element in Container
+    type:  info
+    text: >
+      Elemente werden innerhalb eines Containers angezeigt. Die Position kann gewählt werden.
+  pageSettings:
+    label: Einstellungen für dieses Element
+    type: headline 
+  title:
+    label: Title
+    type:  text
+    width: 2/3
+  showtitle:
+    label: Titel anzeigen?
+    type: toggle
+    text: yes/no
+    width: 1/3
+    default: no
+  position:
+    label: Position
+    type: radio
+    default: content
+    options:
+      header: im Titel (links)
+      content: im Textbereich (rechts)
+      newarea: neuer Bereich unterhalb
+    width: 1/1

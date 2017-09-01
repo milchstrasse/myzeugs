@@ -1,0 +1,90 @@
+<?php if(!defined('KIRBY')) exit ?>
+
+title: Site
+pages:
+  template:
+    - longpage
+    - costumfz
+    - ajax
+fields:
+  title:
+    label: Title
+    type:  text
+  impressum:
+    label: Impressum
+    type: headline
+  author:
+    label: verantwortlich für den Inhalt
+    type:  user
+  description:
+    label: Description
+    type:  textarea
+  keywords:
+    label: Keywords
+    type:  tags
+  phone:
+    label: Telefon
+    type: tel
+    width: 1/2
+  mail:
+    label: eMail
+    type: email
+    width: 1/2
+  address:
+    label: Adresse
+    type: textarea
+    width: 1/2
+  pageSettings:
+    label: Seiteneinstellungen
+    type: headline
+  bgimg:
+    label: Hintergrundbild
+    type: image  
+  ffh:
+    label: Font-Family für Überschriften
+    type: text
+    width: 1/2
+  ffp:
+    label: Font-Family für Fliesstext
+    type: text
+    width: 1/2
+  fonts:
+    label: Link für Webfonts (z.B. Google Fonts)
+    type: text
+    width: 1/1
+  icons:
+    label: Link für WebIcons (z.B. font-awesome)
+    type: text
+    width: 1/1
+  more:
+    label: weitere Einstellungen
+    type: headline
+  bantyp:
+    label: Navigation
+    type: select
+    options: 
+      stat: oben - statisch
+      dyn: oben - dynamisch
+      side: seitlich
+    default: dyn 
+    width: 1/2
+  pimpr:
+    label: Impressum
+    type: page
+    width: 1/2
+  showfz:
+    label: zusätzliche Fusszeile anzeigen?
+    type: fieldtoggle
+    width: 1/4
+    options:
+      yes: ja
+      no: nein
+    default: no
+    show:
+      yes: fusszeile
+    hide:
+      no: fusszeile
+  fusszeile:
+    label: Text
+    type:  textarea
+    width: 3/4

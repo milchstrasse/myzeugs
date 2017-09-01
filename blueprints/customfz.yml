@@ -1,0 +1,61 @@
+<?php if(!defined('KIRBY')) exit ?>
+
+title: benutzerdefinierte Fusszeile
+icon: diamond
+pages: true
+  template:
+    el_figure
+
+files: true
+  fields:
+    alt:
+      label: Alternativtext
+      type: text
+      help: wird angezeigt, wenn das Bild nicht geladen wird
+    caption:
+      label: Beschreibung
+      type: textarea
+    
+
+fields:
+  info:
+    label: Container für eine eigene Fusszeile
+    type:  info
+    text: >
+      hier kann eine eigene Fusszeile hinzugefügt werden. Sie wird auf allen Seiten unten angezeigt. Falls das nicht gewünscht ist, kann die Fusszeile auf jeder Seite einzeln abgewählt werden.
+  pageSettings:
+    label: Einstellungen für Container
+    type: headline 
+  title:
+    label: Title
+    type:  text
+    width: 1/3
+  showtitle:
+    label: Titel anzeigen?
+    type: toggle
+    text: yes/no
+    width: 1/3
+  layout:
+    label: Layout
+    type: select
+    default: eineSpalte
+    options:
+      eineSpalte: Titel oben
+      zweiSpalten: Titel links
+    default: zweiSpalten
+    width: 1/3
+  bgimg:
+    label: Hintergrundbild
+    type: select
+    options: images
+    width: 1/1
+  subline:
+    label: Subline
+    type:  textarea
+    help: kurzer Text, der zusammen mit dem Titel anzeigt wird 
+    width: 1/3
+  text:
+    label: Haupttext (Inhalt)
+    help: der eigentliche Inhalt des Artikels
+    type: textarea
+    width: 2/3

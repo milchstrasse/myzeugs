@@ -1,0 +1,58 @@
+<?php if(!defined('KIRBY')) exit ?>
+
+title: Longpage
+icon: folder-open-o
+pages: 
+  template:
+    - container
+    - con_ticker
+    - con_design
+#    - con_overview
+#    - con_fotos
+#    - con_event
+#    - con_contact
+    - con_custom
+#    - aside
+files: true
+fields:
+  info:
+    label: Longpage
+    type:  info
+    text: >
+      in einer Longpage werden alle eingefügten Unterseiten als eigene Abschnitte (Container) untereinander dargestellt.<br>
+      Durch Hinzufügen einer Seite wird ein neuer Abschnitt erstellt.
+  title:
+    label: Title
+    type:  text
+    width: 1/2
+  showtitle:
+    label: Titel der Longpage anzeigen?
+    type: toggle
+    text: yes/no
+    default: no
+    width: 1/2
+  imagetoggle:
+    label:       Hintergrundbild anzeigen?
+    type:        fieldtoggle
+    width: 1/2
+    options:
+      def:   "aus 'Einstellungen'"
+      ind:   "individuell"
+      no:    "keines"
+    default:   def
+    show:
+      ind:       bgimg
+    hide:
+      no:        bgimg
+      def:       bgimg
+  bgimg:
+    label:       Hintergrundbild
+    type: select
+    options: images
+    width: 1/2
+  showfz:
+    label: Fusszeile anzeigen?
+    type: toggle
+    text: yes/no
+    default: yes
+    width: 1/2

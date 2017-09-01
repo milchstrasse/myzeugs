@@ -1,0 +1,16 @@
+title: htmlRequest
+icon: question-circle
+pages: false
+files: false
+fields:
+  title:
+    label: Title
+    type:  text
+  info:
+    label: htmlRequests
+    type:  info
+    text: >
+      Seite um htmlRequests zu beantworten. Seite soll unsichtbar bleiben
+  sqlsnippet:
+    label: SQL Snippet
+    type: text

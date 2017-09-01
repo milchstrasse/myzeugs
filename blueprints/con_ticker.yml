@@ -1,0 +1,56 @@
+<?php if(!defined('KIRBY')) exit ?>
+
+title: Ticker
+icon: bell-o
+pages: false
+files: false
+preview: parent
+    
+
+fields:
+  info:
+    label: Ticker
+    type:  info
+    text: >
+      Der Ticker kann an beliebiger Stelle in der Longpage angezeigt werden(er wird als eigener Container behandelt)
+  pageSettings:
+    label: Einstellungen für Ticker
+    type: headline 
+  title:
+    label: Title
+    type:  text
+    width: 1/3
+  showtitle:
+    label: Titel anzeigen?
+    type: toggle
+    text: yes/no
+    width: 1/3
+  showinnavi:
+    label: in Menu anzeigen?
+    type: toggle
+    text: yes/no
+    width: 1/3
+    default: false
+  layout:
+    label: Layout
+    type: select
+    default: normal
+    options:
+      static: Statisch
+      normal: Standard
+      accent: Auffällig
+    width: 1/3
+  text:
+    label: Ticker Text (Inhalt)
+    type: text
+    width: 1/1
+  ashow:
+    label: nur anzeigen von
+    type: date
+    default: today
+#    override: true
+    width: 1/3
+  eshow:
+    label: bis
+    type: date
+    width: 1/3

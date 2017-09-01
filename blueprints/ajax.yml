@@ -1,0 +1,24 @@
+title: AJAX
+icon: server
+pages: true
+  template:
+    - ajax
+files: false
+fields:
+  title:
+    label: Title
+    type:  text
+  info:
+    label: httpRequests
+    type:  info
+    text: >
+      Seite um httpRequests zu beantworten. Seite bleibt unsichtbar und gibt nur das gewünschte Resultat zurück, abhängig vom Snippet.
+  sqlstatement:
+    label: SQL Statement
+    type: text
+  snippet:
+    label: individuelles Snippet
+    type: text
+  comment:
+    label: Kommentar
+    type: textarea

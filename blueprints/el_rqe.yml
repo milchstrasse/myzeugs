@@ -1,0 +1,50 @@
+<?php if(!defined('KIRBY')) exit ?>
+
+title: RQE Element
+icon: list-ol
+pages: true
+  template:
+   - el_rqe
+files: true
+
+fields:
+  info:
+    label: Element für Stichpunktartige Anforderungen
+    type:  info
+    text: >
+      Die Punkte werden automatisch nummeriert
+  pageSettings:
+    label: Einstellungen für dieses Element
+    type: headline 
+  title:
+    label: Title
+    type:  text
+    width: 2/3
+  showtitle:
+    label: Titel anzeigen?
+    type: toggle
+    text: yes/no
+    width: 1/3
+    default: no
+  text:
+    label: Text
+    type: textarea
+  position:
+    label: Position
+    type: radio
+    default: newarea
+    options:
+      content: im Textbereich (rechts)
+      newarea: neuer Bereich unterhalb
+    width: 1/1
+  requirement:
+    label: Anforderungen
+    type: textarea
+  rqlevel:
+    label: Anforderungslevel
+    type: select
+    options:
+      keyfunc: Schlüsselfunktion
+      reqfunc: Pflicht
+      nthfunc: Nice to Have
+      demarc: Abgrenzung
